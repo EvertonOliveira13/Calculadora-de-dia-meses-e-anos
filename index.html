@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estiloweb.css">
+    <link rel="stylesheet" href="css/estiloMobile.css">
+    </head>
+<body onload="carregaData()">
+<!-- -----------------------INICIO-CABECALHO------------------------ -->
+    <div class="corpoCalc">
+        <div class="logoEmpresa">
+            <div class="imgLogo">    
+                <img src="img/logo.png">
+            </div>
+            <div class="tituloEmpresa">
+                    <h1>CALCULADORA THIEVERJO</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------FINAL-CABECALHO------------------------ -->
+
+    <section>
+        <div class="formulario">
+            <h2>Calculadora de idade em dias, Semanas e Meses</h2>
+            <form>
+                <input type="text" id="nome" value="" placeholder="Nome" required>
+
+                <label>**data de nascimento**</label>
+                <input type="date" id="dataNascimento" required>
+
+                <input type="date" id="dataAtual" required>
+            </form>
+            <div class="botao">
+                <input type="submit" class="botaoEnviar" value="Calcular"
+                onclick="calculaIdade()">
+            </div>
+            <div class="resultado" id="resultado">
+            </div>
+        </div>
+        
+    </section>
+    <!-- -----------------------FINAL-FORMULARIO--------------------- -->
+    <!-- -----------------------INICIO-FOOTER------------------------ -->
+    <footer>
+        <div class="corpoCalc">
+            <div class="logoEmpresa">
+                <div class="tituloEmpresa">
+                        <h1>THIEVERJO</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod reiciendis eos 
+                            commodi quas sit quae quibusdam adipisci ullam blanditiis quisquam dolor 
+                            laudantium dolorem, deleniti minus ex, optio temporibus illo voluptates!</p>
+                </div>
+                <div class="imgLogo">    
+                    <img src="img/logo.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------INICIO-CONTATO-PESSOAL--------------- -->
+
+        <div class="contato">
+            <div class="integrantes">
+                <img src="img/thiago.jpeg">
+                <div class="contatoPessoal">
+                    
+                    <h4>Thiago Alves</h4>
+                    <a href="https://instagram.com/t_alves85?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i class="bi bi-instagram"></i></a>
+                    
+
+                </div>
+            </div>
+
+            <div class="integrantes">
+                <img src="img/everton.jpeg">
+                <div class="contatoPessoal">
+                    
+                    <h4>Everton Oliveira</h4>
+                    <a href="https://instagram.com/everton_s_oliveira?utm_source=qr&igshid=MThlNWY1MzQwNA=="><i class="bi bi-instagram"></i></a>
+                    
+
+                </div>
+            </div>
+
+            <div class="integrantes">
+                <img src="">
+                <div class="contatoPessoal">
+                    
+                    <h4>João Antônio</h4>
+                    <a><i class="bi bi-instagram"></i></a>
+                    
+
+                </div>
+            </div>
+        </div>
+<!-- -----------------FINAL-CONTATO-PESSOAL--------------- -->
+
+            
+        </div>
+    </footer>
+
+    <!-- -----------------FINAL-FOOTER--------------- -->
+
+
+    <!---------------------Chama-o-script-JS----------------->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
